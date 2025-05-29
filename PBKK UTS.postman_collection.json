@@ -1,0 +1,1268 @@
+{
+	"info": {
+		"_postman_id": "8f667f7e-cc89-4f39-b3ab-5e5dde0b90d3",
+		"name": "PBKK UTS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43054955"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/customer/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "01jsf4d02ympze2ag5g3svzjng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/customer/01jsd89djv0b88380h9e212rdf",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"01jsd89djv0b88380h9e212rdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin7@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "adminasas",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0888543212",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "jalanjalan",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"rindu\",\r\n  \"email\": \"kkoryp@gmail.com\",\r\n  \"password\": \"admin9999\",\r\n  \"phone\": \"081234567890\",\r\n  \"address\": \"jalansiam\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/customer/01jwe858hpzy58tbedq97pqfe3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"01jwe858hpzy58tbedq97pqfe3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/customer/01jsdefpse172kdm3gy9vt6ty7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"01jsdefpse172kdm3gy9vt6ty7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "qj5FC3eOgT4sFITm8iqNNXAuFWoTHahN6958s314921c3bc2",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "NMPKAs1hZ0iOipuHZch28vgekthWV3YJdtoaAUz8a9006c6f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/order/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "01jsf4d02ympze2ag5g3svzjng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/order/01jsd89djv0b88380h9e212rdf",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								"01jsd89djv0b88380h9e212rdf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "BtRan02qbOHUiiTsSkdREKJCLC8UDZKfwpnB8tPZc491735a",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "01jwe87rpkb1myvbncpqzzbt25",
+									"type": "text"
+								},
+								{
+									"key": "order_date",
+									"value": "2025-05-23",
+									"type": "text"
+								},
+								{
+									"key": "total_amount",
+									"value": "234545",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "bayar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n//   \"customer_id\": \"01jweaz5p8fcbpx1s8kxah1ctq\",\r\n  \"order_date\": \"2025-06-9\",\r\n  \"total_amount\": \"19\",\r\n  \"status\": \"setuju\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/order/01jweaz5p8fcbpx1s8kxah1ctq",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								"01jweaz5p8fcbpx1s8kxah1ctq"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Order",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/order/01jsdefpse172kdm3gy9vt6ty7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order",
+								"01jsdefpse172kdm3gy9vt6ty7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "qj5FC3eOgT4sFITm8iqNNXAuFWoTHahN6958s314921c3bc2",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "NMPKAs1hZ0iOipuHZch28vgekthWV3YJdtoaAUz8a9006c6f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/product/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/product/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "meja",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "meja lipat",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "400000",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "bagus",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/product",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"kursi\",\r\n  \"description\": \"kursi lipat\",\r\n  \"price\": \"200000\",\r\n  \"stock\": \"15\",\r\n  \"category\": \"bisa dibawa kemana saja\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/product/01jwedd4fmwgp50zjm75jp2tns",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"product",
+								"01jwedd4fmwgp50zjm75jp2tns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "OpX5JRcOP4OfPLN5KSrLaJLWClyxfMKCq7aXci2racc40e18",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/barang/01jvvr9znwshtt6fvhqc6skmhp",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"barang",
+								"01jvvr9znwshtt6fvhqc6skmhp"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "qj5FC3eOgT4sFITm8iqNNXAuFWoTHahN6958s314921c3bc2",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Order_Items",
+			"item": [
+				{
+					"name": "Get Order_Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/order_item/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order_item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order_Items by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "xdZ39N4EIj44y0U7QiZtVAohMi4NQ1v5usRTOFjL9b96a4b2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/order_item/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order_item",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order_Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "NMPKAs1hZ0iOipuHZch28vgekthWV3YJdtoaAUz8a9006c6f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "01jweaz5p8fcbpx1s8kxah1ctq",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "01jwedd4fmwgp50zjm75jp2tns",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "11",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "100000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/order_item",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order_item"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order_Items",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "NMPKAs1hZ0iOipuHZch28vgekthWV3YJdtoaAUz8a9006c6f",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n//   \"order_id\": \"1982965\",\r\n//   \"product_id\": \"8475904054\",\r\n  \"quantity\": \"777\",\r\n  \"price\": \"1378\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/order_item/01jweferthb2e36304jc01rmgw",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"order_item",
+								"01jweferthb2e36304jc01rmgw"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Order_Items",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/stock/01jsdefpse172kdm3gy9vt6ty7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"stock",
+								"01jsdefpse172kdm3gy9vt6ty7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "qj5FC3eOgT4sFITm8iqNNXAuFWoTHahN6958s314921c3bc2",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Get Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/category/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Categories by Id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/category/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"category",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "01jwedd4fmwgp50zjm75jp2tns",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "lemari",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "bagus",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}/api/category",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Categories",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "wF6p2r2WVUMMdD2mGyAfeI9ljqRlLxQ2RzS7INaib1935715",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n//   \"product_id\": \"01jwedd4fmwgp50zjm75jp2tns\",\r\n  \"name\": \"pintu\",\r\n  \"description\": \"jepara\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/category/01jwegx5cvq9hjv540ty62sc5a",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"category",
+								"01jwegx5cvq9hjv540ty62sc5a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hapus Categories",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/stock/01jsdefpse172kdm3gy9vt6ty7",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"stock",
+								"01jsdefpse172kdm3gy9vt6ty7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "qj5FC3eOgT4sFITm8iqNNXAuFWoTHahN6958s314921c3bc2",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Get Token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>User ID</th>\r",
+							"        <th>Name</th>\r",
+							"        <th>Username</th>\r",
+							"        <th>Email</th>\r",
+							"        <th>Created At</th>\r",
+							"        <th>Updated At</th>\r",
+							"    </tr>\r",
+							"    <tr>\r",
+							"        <td>{{response.user.id}}</td>\r",
+							"        <td>{{response.user.name}}</td>\r",
+							"        <td>{{response.user.username}}</td>\r",
+							"        <td>{{response.user.email}}</td>\r",
+							"        <td>{{response.user.created_at}}</td>\r",
+							"        <td>{{response.user.updated_at}}</td>\r",
+							"    </tr>\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    return {response: pm.response.json()}\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "admin@ifump.net",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/api/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@ifump.net",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "iMPt0lP21805j9YXxxMcGnS3st9bzalqQ5whtVqYe7f11061",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{base_url}}/api/logout",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
